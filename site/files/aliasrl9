@@ -1,0 +1,5 @@
+alias install='sudo dnf install'
+alias search='dnf search'
+alias upgrade='sudo dnf upgrade'
+
+alias aliasrl9='${=EDITOR} ~/aliasrl9' # Quick access to the aliasrc config file
