@@ -1,12 +1,12 @@
 class profile::master_server (
-  $user='mhorneus20'
+  # $user='mhorneus20'
   )
 {
-  file { '/home/${user}/aliasus':
+  file { '/home/mhorneus20/aliasus':
     ensure => present,
     source => "puppet:///modules/master/aliasus",
-    group => '${user}',
-    owner => '${user}',
+    group => 'mhorneus20',
+    owner => 'mhorneus20',
   }
 
 }
