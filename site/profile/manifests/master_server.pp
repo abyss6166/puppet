@@ -1,5 +1,5 @@
 class profile::master_server (
-  $user => 'mhorneus20'
+  $user='mhorneus20'
   )
 {
   file { '/home/${user}/aliasus':
