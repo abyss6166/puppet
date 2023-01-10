@@ -4,7 +4,7 @@ class profile::rocky9 (
 {
   file {'/home/${user}/aliasrocky9':
     ensure => file,
-    source => 'puppet:///site/files/aliasrl9'
+    source => 'puppet:///files/aliasrl9'
   }
 
   package {'tmux':
