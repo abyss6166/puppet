@@ -6,6 +6,11 @@ node 'ubuntuserver20' {
     ensure => file,
     content => "Welcome to ${fqdn}\n",
    }
+  file { '/home/${user}/aliasbase':
+  ensure => present,
+  source => "puppet:///files/aliasbase"
+  }
+
 }
 
 # node 'minetest.puppet.vm' {
