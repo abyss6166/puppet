@@ -6,10 +6,10 @@ node 'ubuntuserver20' {
     ensure => file,
     content => "Welcome to ${fqdn} bizzle\n",
    }
-  # file { '/home/${user}/aliasbase':
-  #   ensure => present,
-  #   source => "puppet:///site/master_server/files/aliasbase"
-  # }
+  file { '/home/mhorneus20/aliasbase':
+    ensure => present,
+    source => "puppet:///modules/aliasbase"
+  }
 
 }
 
