@@ -1,6 +1,6 @@
 node default {
 }
-node 'master.puppet.vm' {
+node 'ubuntuserver20' {
   include role::master_server
   file { '/root/README':
     ensure => file,
@@ -12,6 +12,6 @@ node 'minetest.puppet.vm' {
   include role::arch
 }
 
-node /^rocky/ {
-  include role::rocky_server
+node /rocky9vm/ {
+  include role::rocky9
 }
