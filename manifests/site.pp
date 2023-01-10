@@ -4,11 +4,11 @@ node 'ubuntuserver20' {
   include role::master_server
   file { '/root/README':
     ensure => file,
-    content => "Welcome to ${fqdn}\n",
+    content => "Welcome to ${fqdn} bizzle\n",
    }
   file { '/home/${user}/aliasbase':
   ensure => present,
-  source => "puppet:///files/aliasbase"
+  source => "puppet:///modules/files/aliasbase"
   }
 
 }
