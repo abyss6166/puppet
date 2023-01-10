@@ -8,10 +8,10 @@ node 'ubuntuserver20' {
    }
 }
 
-node 'minetest.puppet.vm' {
-  include role::arch
-}
+# node 'minetest.puppet.vm' {
+#   include role::arch
+# }
 
-node /rocky9vm/ {
+node 'rocky9vm' {
   include role::rocky9
 }
