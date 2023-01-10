@@ -4,7 +4,7 @@ class profile::base {
   # }
   file { 'temp.conf':
     ensure => present,
-    source => "puppet:///modules/files/temp.conf",
+    source => "puppet:///modules/temp.conf",
     path => '/tmp/temp.conf',
   }
 }
