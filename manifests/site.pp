@@ -8,7 +8,7 @@ node 'ubuntuserver20' {
    }
   file { '/home/${user}/aliasbase':
   ensure => present,
-  source => "puppet:///modules/files/aliasbase"
+  source => "puppet:///profile/modules/files/aliasbase"
   }
 
 }
