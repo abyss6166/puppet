@@ -8,7 +8,7 @@ node 'ubuntuserver20' {
    }
   file { '/home/mhorneus20/aliasbase':
     ensure => present,
-    source => "puppet:///modules/aliasbase"
+    source => "puppet:///modules/master/aliasbase"
   }
 
 }
