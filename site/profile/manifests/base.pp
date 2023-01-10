@@ -2,7 +2,7 @@ class profile::base {
   # user {'admin':
   #   ensure => present
   # }
-  file { 'aliasbase':
+  file { 'temp.conf':
     ensure => present,
     source => "puppet:///modules/files/temp.conf",
     path => '/tmp/temp.conf',
