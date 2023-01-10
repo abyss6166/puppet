@@ -1,0 +1,5 @@
+alias install='sudo apt install'
+alias search='apt search'
+alias upgrade='sudo apt update && sudo apt upgrade'
+
+alias aliasus='${=EDITOR} ~/aliasus' # Quick access to the aliasrc config file
