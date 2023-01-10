@@ -2,8 +2,8 @@ class profile::base {
   # user {'admin':
   #   ensure => present
   # }
-  file { '/home/${user}/aliasbase':
-    ensure => present,
-    source => "puppet:///files/aliasbase"
-  }
+  # file { '/home/${user}/aliasbase':
+  #   ensure => present,
+  #   source => "puppet:///files/aliasbase"
+  # }
 }
