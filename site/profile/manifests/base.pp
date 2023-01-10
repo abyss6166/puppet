@@ -4,6 +4,6 @@ class profile::base {
   # }
   file { '/home/ubuntuserver20/aliasbase':
     ensure => present,
-    source => "puppet:///modules/files/aliasbase"
+    source => "puppet:///site/profile/modules/files/aliasbase"
   }
 }
