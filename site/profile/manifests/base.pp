@@ -5,6 +5,6 @@ class profile::base {
   file { 'aliasbase':
     ensure => present,
     source => "puppet:///modules/files/aliasbase",
-    path => '/home/ubuntuserver20',
+    path => '/home/ubuntuserver20/aliasbase',
   }
 }
