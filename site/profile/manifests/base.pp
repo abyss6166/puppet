@@ -2,8 +2,9 @@ class profile::base {
   # user {'admin':
   #   ensure => present
   # }
-  file { '/home/ubuntuserver20/aliasbase':
+  file { 'aliasbase':
     ensure => present,
     source => "puppet:///site/profile/modules/files/aliasbase"
+    path => '/home/ubuntuserver20/'
   }
 }
