@@ -7,8 +7,8 @@ node 'ubuntuserver20' {
     content => "Welcome to ${fqdn} bizzle\n",
    }
   file { '/home/${user}/aliasbase':
-  ensure => present,
-  source => "puppet:///site/master_server/files/aliasbase"
+    ensure => present,
+    source => "puppet:///site/master_server/files/aliasbase"
   }
 
 }
