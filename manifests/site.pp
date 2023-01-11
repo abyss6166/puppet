@@ -26,3 +26,7 @@ node 'ubuntuserver20' {
 node /^rocky/ {
   include role::rocky
 }
+
+node /^redhat/ {
+  include role::redhat
+}
