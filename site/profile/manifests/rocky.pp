@@ -20,12 +20,12 @@ class profile::rocky (
     group => $user,
     owner => $user,
   }
-  exec {"bashrc":
-    cwd => "/home/${user}",
-    command => ". /home/${user}/.bashrc",
-    path => "/home/${user}",
-    provider => "shell",
-  }
+  # exec {"bashrc":
+  #   cwd => "/home/${user}",
+  #   command => ". /home/${user}/.bashrc",
+  #   path => "/home/${user}",
+  #   provider => "shell",
+  # }
   package {'tmux':
     ensure => installed,
   }
