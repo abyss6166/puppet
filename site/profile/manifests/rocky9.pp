@@ -1,5 +1,5 @@
 class profile::rocky9 (
-  $user => 'mhornerl9'
+  $user='mhornerl9'
   )
 {
   file {'/home/${user}/aliasrocky9':
