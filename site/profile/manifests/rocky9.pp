@@ -2,10 +2,12 @@ class profile::rocky9 (
   $user='mhornerl9'
   )
 {
-  file {'/home/${user}/aliasrocky9':
+  file {"/home/${user}/aliasrl9":
     ensure => file,
-    source => 'puppet:///files/aliasrl9'
-  }
+    source => 'puppet:///modules/master/aliasrl9',
+    group => $user,
+    owner => $user,
+}
 
   package {'tmux':
     ensure => installed,
@@ -19,3 +21,4 @@ class profile::rocky9 (
   }
 
 }
+
