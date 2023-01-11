@@ -113,8 +113,8 @@ if [ -f ~/aliasus ]; then
     . ~/aliasus
 fi
 
-if [ -f ~/aliasrl9 ]; then
-    . ~/aliasrl9
+if [ -f ~/aliasrh ]; then
+    . ~/aliasrh
 fi
 
 
