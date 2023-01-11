@@ -19,6 +19,6 @@ node 'ubuntuserver20' {
 #   include role::arch
 # }
 
-node '^/rocky*/' {
+node '/^rocky/' {
   include role::rocky
 }
