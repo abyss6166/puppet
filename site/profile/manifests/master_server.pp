@@ -13,7 +13,7 @@
 
 # {
 class profile::master_server (
-  $user='mhorneus20',
+  $user='msh',
   )
 {
   file { "/home/${user}/aliasus":

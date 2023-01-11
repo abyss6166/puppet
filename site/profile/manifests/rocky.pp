@@ -1,13 +1,13 @@
-class profile::rocky9 (
-  $user='mhornerl9'
+class profile::rocky (
+  $user='msh'
   )
 {
-  file {"/home/${user}/aliasrl9":
+  file {"/home/${user}/aliasrh":
     ensure => file,
-    source => 'puppet:///modules/master/aliasrl9',
+    source => 'puppet:///modules/master/aliasrh',
     group => $user,
     owner => $user,
-}
+  }
   file { "/home/${user}/aliasbase":
     ensure => present,
     source => "puppet:///modules/master/aliasbase",
@@ -26,17 +26,13 @@ class profile::rocky9 (
     path => "/home/${user}",
     provider => "shell",
   }
-
   package {'tmux':
     ensure => installed,
   }
-
-  user {'mhornerl9':
+  user {'msh':
     ensure => present,
-    uid => '1000',
-    gid => '1000',
-    home => '/home/mhornerl9',
+    # uid => '1000',
+    # gid => '1000',
+    home => "/home/${user}",
   }
-
 }
-
