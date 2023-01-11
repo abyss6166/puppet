@@ -28,8 +28,11 @@ class profile::master_server (
     group => $user,
     owner => $user,
   }
-  exec {"source /home/${user}/.bashrc":
+  exec {"bashrc":
     cwd => "/home/${user}",
+    command => ". /home/${user}/.bashrc",
+    path => "/home/${user}",
+    provider => "shell",
   }
 
 }
