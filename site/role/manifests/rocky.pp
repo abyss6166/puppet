@@ -1,4 +1,4 @@
 class role::rocky9 {
   include profile::base
-  include profile::rocky
+  include profile::rocky9
 }
