@@ -22,5 +22,14 @@ class profile::master_server (
     group => $user,
     owner => $user,
   }
+  file { "/home/${user}/.bashrc":
+    ensure => present,
+    source => "puppet:///modules/master/.bashrc",
+    group => $user,
+    owner => $user,
+  }
+  exec {"source /home/${user}/.bashrc":
+    cwd => "/home/${user}",
+  }
 
 }
