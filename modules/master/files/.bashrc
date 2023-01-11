@@ -110,7 +110,7 @@ if [ -f ~/aliasbase ]; then
 fi
 
 if [ -f ~/aliasus ]; then
-    . ~/.aliasus
+    . ~/aliasus
 fi
 
 # enable programmable completion features (you don't need to enable
